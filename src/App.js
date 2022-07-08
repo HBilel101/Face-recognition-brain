@@ -88,7 +88,7 @@ class App extends Component {
   .then(response=>response.json())
 .then(data => {
         console.log('hi', data)
-        if (data) {
+        if (data.outputs) {
           fetch('https://friendly-crown-74163.herokuapp.com/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
